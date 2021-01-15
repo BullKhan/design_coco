@@ -1,0 +1,164 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
+
+.row { max-width: 1200px; margin: 0 auto; padding: 0 10px; }
+
+body { color:#666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px; }
+
+#header .h_login { 
+    background: #f3f3f3; color:#999; font-size:12px; 
+    padding: 10px 0; text-align: right;
+}
+#header .h_login a { padding: 8px 15px; border-right: 1px solid #ccc; }
+#header .h_login a:first-child { border-left: 1px solid #ccc; }
+
+#header .h_menu { padding: 10px 0; }
+#header .h_menu .logo { float: left; }
+#header .h_menu .nav {
+    float: right; 
+    color: #1e1e1e; font-size: 18px;
+}
+#header .h_menu .nav li {
+    display: inline-block;
+    margin: 15px 40px;
+}
+
+#section .slide {
+    height: 650px;
+    background: url(../img/main_img3.jpg) no-repeat center;
+    color: #fff; font-size: 16px;
+    line-height: 1.5em;
+    position: relative;
+    text-align: center;
+}
+#section .slide_container {
+    position: absolute;
+    left:50%; top:30%;
+    transform: translate(-50%,-30%);
+}
+#section .slide_container p:nth-child(1) { 
+    font-size: 42px; font-weight: bold;
+    margin-bottom: 30px;
+}
+#section .slide_container p:nth-child(3) {
+    margin-bottom: 40px;
+}
+#section .slide_container a {
+    font-size: 15px;
+    padding: 8px 35px;
+    border: 1px solid #fff;
+}
+
+#section .info { font-size: 14px; }
+#section .info .info_title {
+    margin-top: 60px; text-align: center;
+}
+#section .info .info_title p:first-child { 
+    font-size: 36px; color: #000; font-weight: bold;
+    padding: 20px 0;
+}
+#section .info .info_pic > div { 
+    margin-top: 50px; margin-bottom: 100px;
+    color: #fff;
+    float:left;
+    width: 24%;
+    margin-right: 1%;
+    position: relative;
+}
+#section .info .info_pic .pic1 {
+    height: 520px; 
+    background: url(../img/what1.jpg) no-repeat;
+    background-size: cover;
+}
+#section .info .info_pic .pic2 {
+    height: 520px;
+    background: url(../img/what2.jpg) no-repeat;
+    background-size: cover;
+}
+#section .info .info_pic .pic3 {
+    height: 520px;
+    background: url(../img/what3.jpg) no-repeat;
+    background-size: cover;
+}
+#section .info .info_pic .pic4 {
+    height: 520px;
+    background: url(../img/what4.jpg) no-repeat;
+    background-size: cover;
+}
+
+#section .info .info_pic .text {
+    position: absolute;
+    bottom: 10%; left: 10%;
+}
+#section .info .info_pic .text p:first-child { font-size: 24px; }
+#section .info .info_pic .text p:nth-of-type(2) {
+    margin: 20px 0px 30px 0px;
+    line-height: 1.5em;
+    width:80%;
+}
+#section .info .info_pic .text a {
+    font-size: 11px; padding: 8px 40px;
+    border: 1px solid #fff;
+}
+
+#section .innovation {
+    height: 304px;
+    background: url(../img/intro_bg.jpg) no-repeat center;
+    background-size: cover;
+    color: #fff; text-align: center;
+    position: relative;
+}
+#section .innovation .inno_text{
+    position: absolute;
+    top:50%; left:50%;
+    transform: translate(-50%, -50%);
+}
+#section .innovation .inno_text p:nth-of-type(1) {font-size: 34px; }
+#section .innovation .inno_text p:nth-of-type(2) {
+    margin: 30px 0 40px 0; font-size: 14px;
+}
+#section .innovation .inno_text a {
+    font-size: 13px; padding: 8px 30px;
+    border: 1px solid #fff;
+}
+
+#section .product { text-align: center; }
+#section .product .prdt_title h2 { 
+    color: #000; font-size: 32px;
+    margin-top: 80px; font-weight: bold;
+}
+#section .product .prdt_title p { 
+    font-size: 14px;
+    margin-top: 30px; margin-bottom: 30px;
+}
+#section .product .prdt_pic > div { 
+    /* border: 1px solid #999; */
+    box-shadow: 1px 1px 3px #aaa;
+    float:left; width: 32%;
+    margin:6px;
+}
+#section .product .prdt_pic .text h3 { font-size: 17px; padding: 20px; }
+#section .product .prdt_pic .text p { 
+    font-size: 14px; color: #999;
+    padding: 0 25px 25px 25px;
+}
+
+#footer {
+    margin-top:50px; font-size: 12px;
+    background: #333; color: #ddd;
+    padding: 30px 0; text-align: center;
+}
+#footer .icon a{
+    font-size: 17px; color: #fff;
+    margin:0 10px;
+}
+#footer .info { line-height: 1.5em; }
+#footer .info li {
+    display: inline-block;
+    margin: 20px 5px 0px 5px;
+}
+#footer .detail_btn { margin-top: 20px; }
+#footer .detail_btn a {
+    font-size: 11px; padding: 3px 10px;
+    border: 1px solid #ddd;
+}
