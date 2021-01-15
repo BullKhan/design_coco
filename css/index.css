@@ -18,10 +18,31 @@ body { color:#666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px; }
     float: right; 
     color: #1e1e1e; font-size: 18px;
 }
-#header .h_menu .nav li {
+#header .h_menu .nav .depth1 > li {
     display: inline-block;
-    margin: 15px 40px;
+    position: relative;
 }
+.depth1 > li > a { 
+    display: block;
+    padding: 15px 40px; 
+}
+.depth2 {
+    position: absolute;
+    left:0; top:100%; width:100%;
+    text-align: center;
+    z-index: 9999;
+    font-size: 14px; color:#fff;
+    background: #555;
+    line-height: 3em;
+    display: none;
+}
+.depth2 li+li { border-top: 1px solid #777}
+.depth2 > li > a { display: block; }
+
+.depth1 > li:hover > a { color:#00529b; font-weight: bold; }
+.depth1 > li:hover .depth2 { display: block;}
+.depth2 > li:hover { background: #00529b; color:#dfe9fe; }
+
 
 #section .slide {
     height: 650px;
@@ -95,6 +116,7 @@ body { color:#666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px; }
     margin: 20px 0px 30px 0px;
     line-height: 1.5em;
     width:80%;
+
 }
 #section .info .info_pic .text a {
     font-size: 11px; padding: 8px 40px;
