@@ -70,6 +70,7 @@ body { color:#666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px; }
     border: 1px solid #fff;
 }
 
+/* article 2 */
 #section .info { font-size: 14px; }
 #section .info .info_title {
     margin-top: 60px; text-align: center;
@@ -115,7 +116,7 @@ body { color:#666; font-family: 'Noto Sans KR', sans-serif; font-size: 15px; }
 #section .info .info_pic .text p:nth-of-type(2) {
     margin: 20px 0px 30px 0px;
     line-height: 1.5em;
-    width:80%;
+    width:85%;
 
 }
 #section .info .info_pic .text a {
