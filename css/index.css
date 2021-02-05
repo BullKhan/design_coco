@@ -13,22 +13,24 @@ body{font-family: 'Noto Sans KR', sans-serif; color:#666; font-size:15px }
    2. 둘 중에 높이가 낮은 자식을 position:absolute 정렬 : 부모한테 position:relative */
 #header > .row { position:relative; }
 #header h1 { /* float:left;  */ padding:25px 0 }
+#header .nh button {display: none;}
 #header #nav {  /* float:right; */ z-index:99999;
     position:absolute; top:50%; transform:translateY(-50%);
     right:0; font-size:18px; color:#1e1e1e; /* background:red; */ }
 #header #nav .depth1 > li { float:left; position:relative; }
 #header #nav .depth1 > li > a { padding:20px 40px; display:inline-block; }
-#header #nav .depth1 > li:hover > a { color: #00529b; }
+#header #nav .depth1 > li.on > a { color: #00529b; }
 #header .depth2 { position:absolute; top:100%; left:0; 
     background:#555; font-size:14px;
     color:#fff; width:100%; text-align:center; 
     display:none; }
-#header #nav .depth1 > li:hover .depth2 { display:block; }
+#header #nav .depth1 > li.on .depth2 { display:block; }
 #header .depth2 > li > a { padding:18px 0; display:block; 
     border-bottom:1px solid #999; }
 #header .depth2 > li:last-child > a { border-bottom:none }
 #header .depth2 > li:hover > a { background:#00529b; color:#dfe9fe }
 
+.article1 { position: relative; }
 .article1 .slide_group { position: relative; }
 .article1 .slide_group .slick-arrow{
     position: absolute; top:50%; transform: translateY(-50%);
@@ -41,8 +43,8 @@ body{font-family: 'Noto Sans KR', sans-serif; color:#666; font-size:15px }
 .article1 .slide_group .slick-dots li { display: inline-block; margin: 0 10px; }
 .article1 .slide_group .slick-dots li button {
     border: none; outline: none;
-    width: 40px; height: 10px; background: rgba(255,255,255,0.5);
-    text-indent: -9999px; overflow: hidden;
+    width: 60px; height: 10px; background: rgba(255,255,255,0.5);
+    text-indent: -9999px; overflow: hidden; vertical-align: middle;
 }
 .article1 .slide_group .slick-dots li.slick-active button {
     border: 10px solid rgba(255,255,255,1);
@@ -51,6 +53,11 @@ body{font-family: 'Noto Sans KR', sans-serif; color:#666; font-size:15px }
 }
 .article1 .slide_group .prev { left: 50px; }
 .article1 .slide_group .next { right: 50px; }
+.article1 .plpa { 
+    position: absolute; bottom:10.5%; left:57%;
+    background: none; border: none;
+    font-size: 30px; color: #fff;
+}
 
 .article1 .slide1 { height:650px;
     background:url(../img/main_img1.jpg) no-repeat center;
@@ -67,17 +74,17 @@ body{font-family: 'Noto Sans KR', sans-serif; color:#666; font-size:15px }
 #section .article1 .slide_text { position:absolute; top:35%;left:50%;
     transform:translate(-50%, -50%); color:#fff; text-align:center;
 } 
+#section .article1 .slide.slick-cloned .slide_text { opacity: 0; } 
 .article1 .slide_text h2 { font-size: 42px;line-height: 50px;
-    font-weight: 800; opacity: 0; }
+    font-weight: 800; }
 .article1 .slide.slick-active .slide_text h2 {
     animation: fadeInDown 0.5s both 0.6s; }
 .article1 .slide_text p {font-size: 16px;line-height: 24px;
-    font-weight: 400;margin:30px 0; opacity: 0; }
+    font-weight: 400;margin:30px 0; }
 .article1 .slide.slick-active .slide_text p {
     animation: fadeInRight 0.5s both 0.6s; }
 .article1 .slide_text a { display: inline-block; padding: 10px 35px;
-    border: 1px solid #FFF; font-size: 15px; font-weight: 400;
-    opacity: 0; }
+    border: 1px solid #FFF; font-size: 15px; font-weight: 400; }
 .article1 .slide.slick-active .slide_text a {
     animation: fadeInUp 0.5s both 0.6s; }
 /* a버튼에 호버하면 배경색 background: rgba(255,255,255,0.3); */
