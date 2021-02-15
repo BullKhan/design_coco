@@ -45,6 +45,7 @@ a { color:inherit;
     font-size:100%;
     vertical-align:baseline;
     background:transparent;
+    cursor: pointer;
     /* outline:0; */
 }
 

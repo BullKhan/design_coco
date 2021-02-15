@@ -1,4 +1,21 @@
 @media screen and (max-width:1024px){
+
+    /* 로고 */
+    #header h1 img { width: 200px; }
+
+    /* 검색창 */
+    #header .search {
+        position: absolute; right:75px; top:60px; transform: translateY(0%);
+        font-size: 22px; z-index: 99999; color: #000;
+    }
+    #header .search #sbox { 
+        border: none; outline: none; text-indent: 1em; width:0;
+        overflow: hidden; transition: all 0.5s;
+        background: #000; padding: 5px 0; color:#fff;
+    }
+    #header .search #sbox::placeholder{ font-weight: bold; color: #888 }
+    #header .search #sbox.on { width: 200px; }
+
     #header .nh { position: relative; }
     #header .nh button {
         background: none; border: none;
@@ -20,12 +37,10 @@
         right:0; font-size:18px; color:#1e1e1e; /* background:red; */
     }
     #header #nav.on { display: block; }
-
     #header #nav .depth1 > li { 
         /* 하단 카피분 */
         float:unset; position:relative; 
     }
-    
     #header #nav .depth1 > li .depth2 { 
         /* 하단 카피분 */
         position:static; top:100%; left:0; 
@@ -34,6 +49,102 @@
         display:none; 
     }
 
+    .article2 li { 
+        height:520px; float:left; width:49.5%; margin-right:1%; color:#fff;
+        position:relative;
+    }
+    .article2 li:nth-child(1) { 
+        background:url(../img/what1.jpg) no-repeat center;
+        background-size:cover; }
+    .article2 li:nth-child(2) { 
+        background:url(../img/what2.jpg) no-repeat center;
+        background-size:cover; margin-right:0; }
+    .article2 li:nth-child(3) { 
+        background:url(../img/what3.jpg) no-repeat center;
+        background-size:cover; margin-top: 1%;}
+    .article2 li:nth-child(4) { 
+        background:url(../img/what4.jpg) no-repeat center;
+        background-size:cover; margin-right:0; margin-top: 1%;}
 
+    /* article 3 */
+    .article3 { position: relative; }
+    .article3 .row { 
+        max-width: 1200px; margin:0 auto; padding:0 10px;
+        position:absolute; top:50%; transform: translateY(-50%);
+        left:0; right:0;
+    }
+    #section .article3 h2 {
+        color: #000; font-size: 30px; line-height: 42px; font-weight: 700;
+        padding:0px 0 10px; text-align:center;
+        word-break: keep-all; /* 한글 단어 잘림 허용 안함 */
+        overflow: hidden; text-overflow: ellipsis;
+    }
+    .article3 p {
+        padding: 15px 0 25px; line-height: 1.5;
+        word-break: keep-all; overflow: hidden; text-overflow: ellipsis;
+    }
 
+    /* article 4 */
+    .article4 li {
+        float:left; width:49.5%;
+        margin-right:1%;
+        margin-bottom:20px; 
+        border:1px solid #999;
+        text-align:center;
+    }
+    .article4 li:nth-child(3n) { margin-right:1% }
+    .article4 li:nth-child(2n) { margin-right:0% }
+
+    /* article 5 */
+    .article5 .row > div { width:100%; float:left; }
+    .article5 .row > div.cs_board { padding-right:30px; padding-left:30px;}
+    .article5 .row > div.cs_center { 
+        border-left:0px solid #ddd;
+        border-right:0px solid #ddd;
+        padding:30px;
+    }
+    .article5 .row .cs_movie { padding-right:30px; padding-left:30px; }
+
+} /* END - 1024px */
+
+@media screen and (max-width:750px){
+    #footer .info span { padding:5px 20px; display: block}
 }
+
+@media screen and (max-width:500px){
+    .article1 .slide_group .slick-dots li button {
+        border: none; outline: none;
+        width: 30px; height: 10px; background: rgba(255,255,255,0.5);
+        text-indent: -9999px; overflow: hidden; vertical-align: middle;
+    }
+    .article1 .slide_group .slick-dots li.slick-active button {
+        border: 10px solid rgba(255,255,255,1);
+        width: 20px; height: 20px; background: transparent; 
+        border-radius: 50%;
+    }
+    .article1 .plpa { 
+        position: absolute; bottom:42.5px; left:50%; transform: translate(80px);
+        background: none; border: none;
+        font-size: 20px; color: #fff;
+    }
+
+    .article2 li { 
+        height:400px; float:left; width:49.5%; margin-right:1%; color:#fff;
+        position:relative;
+    }
+    .article2 li > div > a {  display: block; padding: 10px 0px; 
+        text-align: center;
+        border: 1px solid rgba(255,255,255,0.5);
+        font-size: 11px; font-weight: 600 !important;
+    }
+
+    .article4 li {
+        float:left; width:100%;
+        margin-right:0%;
+        margin-bottom:20px; 
+        border:1px solid #999;
+        text-align:center;
+    }
+    .article4 li:nth-child(2n) { margin-right:0 }
+
+} /* END - 500px */
